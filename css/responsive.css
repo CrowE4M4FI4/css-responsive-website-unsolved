@@ -7,23 +7,150 @@
 
 
 @media (min-width: 1024px) {
-  .top-navigation .trigram {
+  .top-navigation
+  .trigram
+  {
     display: none;
   }
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
   
+  .top-navigation :hover {
+    color: black;
+  }
+
+  .logo span:hover {
+    color: black;
+  }
   
+  .email li :hover {
+    color: white;
+  }
+
+  /* issue */
+  .social-icons .facebook:hover,
+  .social-icons .twitter:hover,
+  .social-icons .instagram:hover,
+  .social-icons .linked-in:hover {
+    color: white ;
+  }
+  .social-icons .icon:hover {
+    background-color: white;
+      
+  } 
+  
+  .phones li :hover {
+    color: white;
+  }
+
+  .teammate-social-icons :hover {
+    background-color: black;
+  }
+
+  .teammate-info .teammate-role:hover {
+    color: black;
+  }
+  .address p:hover {
+    color: white;
+  }
+
+ 
+
 }
 
 
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 @media (min-width: 768px) AND (max-width: 1023px) {
+.top-navigation ul {
+  display: none;
+}
 
+
+
+.subtext {
+  padding: 1px;
+}
+ 
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.teammates-list {
+  display: hidden;
+}
+
+.teammate-social-icons div {
+  background-color: black;
+}
+
+.teammate-info .teammate-role {
+  color: black;
+}
+
+ .teammates-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0px;
+}
+
+.teammates-list-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.teammate-img-wrapper {
+  width: 100%;
+  gap: 5px;
+  }
+
+ 
+.teammate span,
+.teammate-social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.teammate {
+  width: 48%;
+}
+
+.facebook span,
+.twitter span,
+.instagram span,
+.linked-in span {
+  display: none;
+}
+
+.footer-content .social-icons {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+}
 }
 
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
-@media (max-width: 767px) {
-  
+@media (min-width: 360px ) AND (max-width: 767px) {
+  .top-navigation ul {
+  display: none;
 }
+
+.portfolio-list .portfolio-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+} 
