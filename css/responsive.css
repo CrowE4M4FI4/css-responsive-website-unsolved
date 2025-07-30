@@ -49,12 +49,7 @@
   .teammate-info .teammate-role:hover {
     color: black;
   }
-  .address p:hover {
-    color: white;
-  }
-
- 
-
+  
 }
 
 
@@ -73,7 +68,18 @@ header {
   z-index: 999;
  }
 
+ .content h2 {
+  padding: 0;
+
+ }
+
+ .section-info {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
 .content p.subtext {
+  width: auto;
   padding: 0;
 }
  
@@ -143,15 +149,24 @@ header {
   display: none;
 }
 
+footer .social-icons .icon {
+  background-color: white;
+}
+
 .footer-content .social-icons {
   width: 22%;
   display: flex;
   justify-content: center;
 }
+
+.footer-contacts ul li a {
+  color: white;
+}
 }
 
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+/* Galaxy Z Fold 5 is 344  x 882 */
 @media (min-width: 360px ) AND (max-width: 767px) {
   .top-navigation ul {
   display: none;
@@ -165,8 +180,13 @@ header {
   z-index: 999;
  }
 
+ .content h2 {
+  padding: 0;
+ }
+
 .content p.subtext {
   padding: 0;
+  width: auto;
 }
 
 .content .portfolio-list {
@@ -199,14 +219,42 @@ header {
 }
 
 .teammate-data {
+  width: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.footer-contacts ul li {
-  
+.teammate-info {
+  text-align: center;
+}
+
+.teammate-social-icons div {
+  background-color: black;
+}
+
+footer .social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .social-icons .icon {
+  background-color: white;
+}
+
+footer .social-icons div {
+  color: white;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contacts ul li a {
+  color: white;
 }
 
 } 
