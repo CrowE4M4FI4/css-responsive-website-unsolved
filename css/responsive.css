@@ -65,10 +65,16 @@
   display: none;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  border-bottom: 5px solid dimgrey;
+  z-index: 999;
+ }
 
-
-.subtext {
-  padding: 1px;
+.content p.subtext {
+  padding: 0;
 }
  
 .portfolio-list {
@@ -82,7 +88,12 @@
 }
 
 .teammates-list {
-  display: hidden;
+  display: none;
+}
+
+.teammates-list:after,
+.teammates-list:before {
+  display: none;
 }
 
 .teammate-social-icons div {
@@ -146,11 +157,56 @@
   display: none;
 }
 
-.portfolio-list .portfolio-item {
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  border-bottom: 5px solid dimgrey;
+  z-index: 999;
+ }
+
+.content p.subtext {
+  padding: 0;
+}
+
+.content .portfolio-list {
   display: flex;
   flex-direction: column;
 }
 
+.portfolio-item-info  {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
 
+.teammates-list:after,
+.teammates-list:before {
+  display: none;
+}
+
+.teammates-list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.teammate {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.teammate-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer-contacts ul li {
+  
+}
 
 } 
